@@ -1,0 +1,38 @@
+.scena{
+-fx-background-color: #323233;
+    -fx-opacity: 0.97;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+
+}
+.botao{
+    -fx-background-color: #636465;
+    -fx-font-size: 24px;
+    -fx-text-fill: #FFF;
+    -fx-min-width: 46px;
+    -fx-min-height: 56px;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+.display{
+    -fx-text-fill: #FFF;
+}
+
+.botaoAc{
+    -fx-background-color: rgba(99, 100, 101, 0);
+    -fx-font-size: 24px;
+    -fx-text-fill: #FFF;
+    -fx-min-width: 46px;
+    -fx-min-height: 56px;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+.botaoLog{
+    -fx-background-color: rgb(253, 165, 1);
+    -fx-font-size: 24px;
+    -fx-text-fill: #FFF;
+    -fx-min-width: 46px;
+    -fx-min-height: 56px;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
