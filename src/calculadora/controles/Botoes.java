@@ -69,19 +69,7 @@ public enum Botoes {
     }, BOTAOSOMA {
         @Override
         public void selecaoBotao() {
-            float result;
-            boolean inteiro;
-            if (!Display.getTextoLabel().equals("0")&&Display.getTextoBuffer().equals("0")) {
-                Display.setTextoBuffer(Display.getTextoLabel());
-                Display.setTextoLabel("0");
-                Display.setBufferLogica("+");
-                return;
-            }
-            result=Float.parseFloat(Display.getTextoBuffer())+Float.parseFloat(Display.getTextoLabel());
-            inteiro=Float.toString(result).endsWith(".0");
-            Display.setTextoLabel(inteiro?Float.toString(result).replace(".0",""):Float.toString(result));
-            Display.setTextoBuffer("0");
-            Display.setBufferLogica("");
+           SetNumeros.adcao();
 
         }
 
