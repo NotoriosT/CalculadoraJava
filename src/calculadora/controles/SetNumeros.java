@@ -43,5 +43,23 @@ public static void adcao(){
     Display.setTextoBuffer("0");
     Display.setBufferLogica("");
 }
+
+public  static void divisao() {
+    float result = 0;
+    boolean inteiro;
+    if (!Display.getTextoLabel().equals("0")&&Display.getTextoBuffer().equals("0")) {
+        Display.setTextoBuffer(Display.getTextoLabel());
+        Display.setTextoLabel("0");
+        Display.setBufferLogica("/");
+        return;
+    }
+    if (!Display.getTextoLabel().equals("0")){
+        System.out.println(Display.getTextoLabel());
+        result=Float.parseFloat(Display.getTextoBuffer())/Float.parseFloat(Display.getTextoLabel());}
+    inteiro=Float.toString(result).endsWith(".0");
+    Display.setTextoLabel(inteiro?Float.toString(result).replace(".0",""):Float.toString(result));
+    Display.setTextoBuffer("0");
+    Display.setBufferLogica("");
+}
     }
 
