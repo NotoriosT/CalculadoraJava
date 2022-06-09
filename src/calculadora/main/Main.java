@@ -15,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader;
-        fxmlLoader = new FXMLLoader(Main.class.getResource("controlerCalculadora.fxml"));
+        fxmlLoader = new FXMLLoader(Main.class.getResource("/resources/controlerCalculadora.fxml"));
         String css=getClass().getResource("/css/css.css").toExternalForm();
         Scene scene = new Scene(fxmlLoader.load());
         scene.getStylesheets().add(css);
